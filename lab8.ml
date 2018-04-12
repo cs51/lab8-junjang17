@@ -245,7 +245,7 @@ Exercise 10: Register the receieve_report listener to listen for the
 newswire event.
 ......................................................................*)
 
-let receiver = WEvent.add_listener newswire receive_report ;;
+(* let receiver = WEvent.add_listener newswire receive_report ;; *)
 
 (* Here are some new headlines to use for testing this part. *)
 
@@ -260,10 +260,10 @@ the news. (They've just queued up a bunch of listeners on the publish
 event instead.)
 ......................................................................*)
 
-let fire_news_2 () =
+(* let fire_news_2 () =
   WEvent.fire_event newswire h4 ;
   WEvent.fire_event newswire h5 ;
-  WEvent.fire_event newswire h6 ;;
+  WEvent.fire_event newswire h6 ;; *)
 
 print_string "Moved to publication.\n" ;;
 
